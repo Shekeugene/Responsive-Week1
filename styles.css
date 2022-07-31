@@ -1,0 +1,122 @@
+:root{
+    /*home page root*/
+    --home-page-main-font: #c54c82;
+    --home-page-h4:#ec729c;
+    --home-page-background:#f5eee6;
+    --contact-me-button:#c54c82;
+    --about-me-button:  #c54c82;
+    /*about me and contact me page root*/
+    --about-me-main-font:#c9485b;
+    --about-me-background: #f5eee6;
+    --about-me-h4:#d8898f;
+    --about-me-border-background:#f7d0cb;
+    --about-me-paragraph:#cf0a2c;
+}
+
+/*home page*/
+.home-page-body{
+    background: var(--home-page-background);
+}
+
+.home-page-body h1{
+    font-size: 86px;
+    color: var(--home-page-main-font);
+    margin: 0 auto;
+}
+
+.home-page-body h2{
+    font-size: 46px;
+    height: 50px;
+    color: var(--home-page-main-font);
+    margin: 50px auto 0;
+}
+
+.home-page-body h4{
+    font-size: 26px;
+    color: var(--home-page-h4);
+    margin: 10px auto 0;
+}
+
+.home-page-body h1, .home-page-body h2, .home-page-body h4{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.button{
+display: flex;
+margin: 40px;
+justify-content: center;
+}
+
+.button a{
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 20px 12px;
+    font-weight:500;
+}
+
+.contact-me{
+    border: 1px solid var(--contact-me-button);
+    background: var(--contact-me-button);
+    color: white;
+}
+
+.about-me{
+    border: 1px solid var(--about-me-button);
+    color: var(--about-me-button);
+}
+
+/*about me and contact me page*/
+.about-me-body{
+    background-color: var(--about-me-background);
+    margin: 40px 0 60px;
+    text-align: center;
+}
+
+.back-to-homepage{
+    color:  var(--about-me-main-font);
+}
+
+.about-me-body h1{
+    color: var(--about-me-main-font);
+    font-size: 86px;
+    margin: 0;
+}
+
+.about-me-body h4{
+   color: var(--about-me-h4);
+   font-size: 26px;
+   margin: 0;
+}
+
+.first-paragraph, .second-paragraph, .third-paragraph{
+    margin: 20px auto;
+    border: 1px solid var(--about-me-border-background);
+    background: var(--about-me-border-background);
+    border-radius: 4px;
+    width: 50%;
+    padding: 15px 10px;
+    text-align: left;
+    color: var(--about-me-paragraph);
+}
+
+.about-me-body h2{
+    color: var(--about-me-main-font);
+    font-size: 46px;
+    margin-bottom: 5px;
+}
+
+.my-email{
+    color:  var(--about-me-h4);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
