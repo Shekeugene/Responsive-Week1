@@ -2,12 +2,12 @@
     /*home page root*/
     --home-page-main-font: #c54c82;
     --home-page-h4:#ec729c;
-    --home-page-background:#f5eee6;
+    --home-page-background:linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     --contact-me-button:#c54c82;
     --about-me-button:  #c54c82;
     /*about me and contact me page root*/
     --about-me-main-font:#c9485b;
-    --about-me-background: #f5eee6;
+    --about-me-background: #fcf8f3;
     --about-me-h4:#d8898f;
     --about-me-border-background:#f7d0cb;
     --about-me-paragraph:#cf0a2c;
@@ -62,14 +62,28 @@ justify-content: center;
     color: white;
 }
 
+.contact-me:hover{
+    border: 1px solid var(--about-me-button);
+    color: var(--about-me-button);
+    background: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .about-me{
     border: 1px solid var(--about-me-button);
     color: var(--about-me-button);
 }
 
+.about-me:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--contact-me-button);
+    background: var(--contact-me-button);
+    color: white;
+}
+
 /*about me and contact me page*/
 .about-me-body{
-    background-color: var(--about-me-background);
+    background: var(--about-me-background);
     margin: 40px 0 60px;
     text-align: center;
 }
@@ -90,15 +104,16 @@ justify-content: center;
    margin: 0;
 }
 
-.first-paragraph, .second-paragraph, .third-paragraph{
+.first-paragraph{
     margin: 20px auto;
     border: 1px solid var(--about-me-border-background);
     background: var(--about-me-border-background);
     border-radius: 4px;
-    width: 50%;
+    width: 60%;
     padding: 15px 10px;
     text-align: left;
     color: var(--about-me-paragraph);
+    font-size: 20px;
 }
 
 .about-me-body h2{
@@ -113,10 +128,56 @@ justify-content: center;
     text-decoration: none;
 }
 
+/*APP*/
+.yoga-app, .weather-app, .yogurt-app{
+    margin: 0 80px;
+}
 
+.yogurt-app{
+    margin-bottom: 50px;
+}
 
+.yoga-app img,.weather-app img, .yogurt-app img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
+.yoga-app h2, .weather-app h2, .yogurt-app h2{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.yoga-app p, .weather-app p, .yogurt-app p{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.yoga-app .primary-link, .weather-app .primary-link, .yogurt-app .primary-link{
+    border: 1px solid #e67a7a;
+    border-radius: 4px;
+    background-color:#e67a7a;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    text-transform: capitalize;
+    font-weight: 500px;
+}
 
+.yoga-app .primary-link:hover, .weather-app .primary-link:hover, .yogurt-app .primary-link:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: none;
+    color:#e67a7a ;
+}
 
+/*About Me Page - app image */
+.app-container{
+    margin: 20px 30px 70px;  
+}
+
+.app-container img{
+    border: 5px solid white;
+    max-width: 100%;
+    height: auto;
+
+}
